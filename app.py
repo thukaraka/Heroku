@@ -40,7 +40,7 @@ def get_data(final_features):
     
    return {
        "fulfillmentText" : output,
-       "intent": pred
+       "Prediction_message": "prediction"
         
    }
  
