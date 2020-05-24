@@ -29,7 +29,7 @@ def webhook():
  
 def get_data(final_features):
    prediction=model.predict_proba(final_features)
-   pred=(prediction[0][0]*0.842)
+   pred=(prediction[0][0])
    if (pred<0.5):
         output='You have '+ str((1-pred)*100)+'%'+' possibility of having heart disease.Please take immediate action to cure your self.'
    elif (0.5<=pred<0.75):
